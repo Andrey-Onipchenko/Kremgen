@@ -11,10 +11,12 @@ slider.addEventListener("click", (event) => {
 // popup
 let popupBtnsOpen = document.querySelectorAll(".popup__open"),
   popup = document.querySelector(".popup"),
+  body = document.querySelector("body"),
   video = document.querySelector(".popup__video");
 popupBtnsOpen.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     popup.classList.add("popup__open");
+    body.classList.add("hidden");
     let season = event.target.dataset.season;
     console.log(season);
     switch (season) {
@@ -40,5 +42,6 @@ popup.addEventListener("click", (event) => {
     event.target.classList.contains("popup")
   ) {
     popup.classList.remove("popup__open");
+    body.classList.remove("hidden");
   }
 });
