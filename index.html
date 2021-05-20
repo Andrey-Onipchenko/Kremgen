@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кремген</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="header">
+          <img src="./images/logo.png" alt="Логотип" class="header__logo" />
+          <div class="header__right">
+            <a href="#" class="header__link"></a>
+            <a href="#" class="header__link"></a>
+          </div>
+        </div>
+        <div class="main__content">
+          <h1 class="main__title">Чотири сезони з Кремген UNI</h1>
+          <p class="main__text">
+            Чутлива та ніжна – наша шкіра потребує ретельної уваги та надійного
+            захисту весь рік.
+          </p>
+          <p class="main__text">
+            Сьогодні це дуже просто – достатньо завжди мати у своїй аптечці
+            універсальний засіб.
+          </p>
+          <a href="#slider" class="btn main__btn">Дізнатись більше</a>
+        </div>
+      </div>
+    </main>
+    <div class="slider-wrap" id="slider">
+      <div class="slider">
+        <div class="slider__item slider__item-one slider__item_active">
+          <div class="slider__content">
+            <h4 class="slider__content-title">Весна</h4>
+            <p class="slider__content-text">
+              Відпочинок на природі можуть зіпсувати укуси комах! Як наслідок –
+              свербіж, подразнення, запалення. Як заспокоїти шкіру?
+            </p>
+            <button class="btn popup__open" data-season="spring">
+              Детальніше
+            </button>
+          </div>
+        </div>
+        <div class="slider__item slider__item-two">
+          <div class="slider__content slider__content-not">
+            <h4 class="slider__content-title">Літо</h4>
+            <p class="slider__content-text">
+              Сонце не завжди лагідне до твоєї шкіри та може обпікати. Як зняти
+              запалення?
+            </p>
+            <button class="btn popup__open" data-season="summer">
+              Детальніше
+            </button>
+          </div>
+        </div>
+        <div class="slider__item slider__item-three">
+          <div class="slider__content slider__content-not">
+            <h4 class="slider__content-title">Осінь</h4>
+            <p class="slider__content-text">
+              Поривчастий холодний вітер пересушує шкіру. Як її відновити?
+            </p>
+            <button class="btn popup__open" data-season="autumn">
+              Детальніше
+            </button>
+          </div>
+        </div>
+        <div class="slider__item slider__item-four">
+          <div class="slider__content slider__content-not">
+            <h4 class="slider__content-title">Зима</h4>
+            <p class="slider__content-text">
+              Мороз. Сніг. А чи в захваті від цього буде твоя шкіра? Дізнайся,
+              що робити, щоб її захистити.
+            </p>
+            <button class="btn popup__open" data-season="winter">
+              Детальніше
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <div class="container">
+        <div class="description__wrap">
+          <div class="description__left">
+            <h3 class="description__title description__left-title">
+              Кремген UNI – універсальний крем на всі сезони!
+            </h3>
+            <p class="description__text">
+              Цей косметичний засіб стане помічником у різних ситуаціях: у
+              побуті, на природі, на відпочинку та в дорозі. Замість декількох
+              брендів в аптечці можна мати Кремген UNI. Він стане у пригоді всій
+              родині!
+            </p>
+            <img src="./images/description_bg.png" alt="" />
+          </div>
+          <div class="description__right">
+            <div class="description__count"></div>
+            <div class="description__structure">
+              <h3 class="description__title description__structure-title">
+                Що входить у склад Кремген UNI:
+              </h3>
+              <div class="description__structure-flex">
+                <div class="description__structure-left">
+                  <p class="description__text description__structure-text">
+                    <span class="bold">Пантотенат кальцію (вітамін В5)</span>
+                    Сприяє загоєнню ран, покращує процеси відновлення і
+                    регенерації шкіри, зменшує подразнення.
+                  </p>
+                  <p class="description__text description__structure-text">
+                    <span class="bold block">Бджолиний віск</span>
+                    Створює захисний бар’єр для шкіри; сприяє зменшенню
+                    запальних процесів; тонізує, пом’якшує та зволожує шкіру (як
+                    натуральний зволожувач).
+                  </p>
+                </div>
+                <div class="description__structure-right">
+                  <p class="description__text description__structure-text">
+                    <span class="bold"
+                      >Рідкий парафін, вазелін та гліцерин</span
+                    >
+                    Створють захисний бар’єр, пом’якшують, сприяють збереженню
+                    вологи та пружності шкіри.
+                  </p>
+                  <p class="description__text description__structure-text">
+                    <span class="bold"> Цетеарил етилгексаноат</span>
+                    Сприяє зменшенню сухості шкіри.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video">
+      <video class="video__item" controls poster="./images/poster.png">
+        <source src="./video/21_04.mp4" type="video/mp4" />
+        Your browser doesn't support HTML5 video tag.
+      </video>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__item">
+            <img src="./images/logo.png" alt="Логотип" />
+          </div>
+          <div class="footer__item footer__item-center">
+            © 2021 UMH. All Rights Reserved.
+          </div>
+          <div class="footer__item footer__item-right">
+            <a href=""
+              ><img
+                class="footer__instagram"
+                src="./images/instagram.svg"
+                alt="instagram"
+            /></a>
+            <a href=""
+              ><img class="footer__fb" src="./images/fb.svg" alt="facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__wrap">
+        <button class="popup__close"></button>
+        <div class="popup__content">
+          <div class="popup__content-left">
+            <video class="popup__video" controls poster="./images/poster.png">
+              <source src="./video/21_04.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+          </div>
+          <div class="popup__content-right">
+            <p class="popup__text">
+              Літо – час сонця, пляжів та ніжної засмаги. Але після довгої зими
+              наша шкіра досить вразлива, й навіть м’які та лагідні промені
+              сонця можуть залишити червоні сліди, опіки шкіри.
+            </p>
+            <p class="popup__text">Особливо вразливі діти та жінки.</p>
+            <p class="popup__text">
+              Якщо це вже сталося, згадайте про Кремген UNI! Нанесіть Кремген
+              UNI тонким шаром на подразнену ділянку шкіри – свою або малечі –
+              та компоненти Кремген UNI допоможуть у її зволоженні та
+              відновленні.
+            </p>
+            <a href="#" class="btn">Дізнатись більше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
