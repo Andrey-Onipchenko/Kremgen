@@ -76,9 +76,16 @@ body {
 .header {
   padding-top: 15px;
   margin-bottom: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__link-video {
+  display: inline-block;
+  margin-left: 45px;
 }
 .main {
-  background: url("../images/main__bg.png") no-repeat right bottom;
+  background: url("../images/main.png") no-repeat right bottom;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -95,11 +102,21 @@ body {
   width: 100%;
   margin-bottom: 10px;
 }
+.main__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+}
 .main__content {
   height: 32vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+}
+.main__content-right img {
+  max-width: 50vw;
+  margin-top: -10vh;
 }
 .main__btn {
   margin-top: 30px;
