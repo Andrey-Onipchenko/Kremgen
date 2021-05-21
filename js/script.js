@@ -42,6 +42,7 @@ popup.addEventListener("click", (event) => {
   ) {
     popup.classList.remove("popup__open");
     body.classList.remove("hidden");
+    video.pause();
   }
 });
 
@@ -58,7 +59,6 @@ class Burger {
     this.burger = document.querySelector(burgerSelector);
     this.menu = document.querySelector(menuSelector);
     this.links = document.querySelectorAll(linkSelector);
-    this.video = document.querySelectorAll(videoSelector);
     this.body = document.querySelector("body");
     this.init();
   }
@@ -67,8 +67,6 @@ class Burger {
     try {
       this.burger.addEventListener("click", () => {
         this.toggle();
-        console.log(this.video);
-        this.video.setAttribute("src", "hhhh");
       });
 
       this.links.forEach((link) => {
