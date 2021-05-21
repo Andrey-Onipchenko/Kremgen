@@ -1,3 +1,10 @@
+let data = {
+  spring: {},
+  summer: {},
+  autumn: {},
+  winter: {},
+};
+
 const slider = document.querySelector(".slider");
 slider.addEventListener("click", (event) => {
   if (event.target.classList.contains("slider__item")) {
