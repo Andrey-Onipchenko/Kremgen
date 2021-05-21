@@ -558,7 +558,7 @@ body {
   }
   .tns-nav {
     height: 16px;
-    width: 130px;
+    max-width: 100px;
     margin: 15px auto 0;
   }
   .tns-nav button {
