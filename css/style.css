@@ -684,6 +684,7 @@ body {
   }
   .popup__content {
     flex-direction: column;
+    height: 80vh;
   }
   .popup__video {
     width: 90vw;
@@ -739,6 +740,7 @@ body {
   .popup__scroll {
     height: 160px;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   .video__item {
     width: 130%;
