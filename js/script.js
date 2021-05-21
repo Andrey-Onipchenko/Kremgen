@@ -18,7 +18,6 @@ popupBtnsOpen.forEach((btn) => {
     popup.classList.add("popup__open");
     body.classList.add("hidden");
     let season = event.target.dataset.season;
-    console.log(season);
     switch (season) {
       case "spring":
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
@@ -55,10 +54,11 @@ var tinySlider = tns({
 });
 
 class Burger {
-  constructor(burgerSelector, menuSelector, linkSelector) {
+  constructor(burgerSelector, menuSelector, linkSelector, videoSelector) {
     this.burger = document.querySelector(burgerSelector);
     this.menu = document.querySelector(menuSelector);
     this.links = document.querySelectorAll(linkSelector);
+    this.video = document.querySelectorAll(videoSelector);
     this.body = document.querySelector("body");
     this.init();
   }
@@ -67,6 +67,8 @@ class Burger {
     try {
       this.burger.addEventListener("click", () => {
         this.toggle();
+        console.log(this.video);
+        this.video.setAttribute("src", "hhhh");
       });
 
       this.links.forEach((link) => {
@@ -74,6 +76,7 @@ class Burger {
           console.dir(document.clientWidht);
           if (window.innerWidth < 701) {
             this.toggle();
+            this.video.pause();
           }
         });
       });
@@ -93,4 +96,9 @@ class Burger {
   }
 }
 
-const burger = new Burger(".burger", ".header__right", ".header__link");
+const burger = new Burger(
+  ".burger",
+  ".header__right",
+  ".header__link",
+  ".popup__video"
+);
