@@ -698,6 +698,7 @@ body {
   }
   .popup__content-right {
     margin-left: 0;
+    max-width: 100%;
   }
   .header__right {
     position: fixed;
@@ -734,6 +735,27 @@ body {
   .popup__content-right {
     margin-left: 30px;
   }
+  .popup__scroll {
+    height: 255px;
+    overflow-y: scroll;
+
+    /* -webkit-overflow-scrolling: touch; */
+    margin-bottom: 30px;
+  }
+  .popup__scroll::-webkit-scrollbar {
+    width: 6px;
+    height: 106px;
+
+    background: #eeeeee;
+    border-radius: 3px;
+  }
+  .popup__scroll::-webkit-scrollbar-thumb {
+    width: 6px;
+    height: 44px;
+
+    background: #faaa00;
+    border-radius: 3px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -745,9 +767,7 @@ body {
     max-width: 280px;
   }
   .popup__scroll {
-    height: 160px;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    height: 210px;
   }
   .video__item {
     width: 130%;

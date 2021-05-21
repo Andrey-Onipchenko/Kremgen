@@ -1,11 +1,27 @@
 let data = {
-  spring: {},
-  summer: {},
-  autumn: {},
-  winter: {},
+  spring: {
+    p1: "Весна – час пікніків, прогулянок парком та дачних радощів, що, на жаль, супроводжуються укусами комах та різними подразненнями шкіри. ",
+    p2: "Щоб нічого не зіпсувало настрій, покладіть у персональну аптечку або дамську сумочку невеликий тюбик Кремген UNI. Він може стати вам у пригоді. ",
+    p3: "При укусах комах, подразненнях, сонячних опіках допоможе Кремген UNI, що тонким шаром потрібно нанести на подразнену шкіру.",
+  },
+  summer: {
+    p1: "Літо – час сонця, пляжів та ніжної засмаги. Але після довгої зими наша шкіра досить вразлива, й навіть м’які та лагідні промені сонця можуть залишити червоні сліди, опіки шкіри. ",
+    p2: "Особливо вразливі діти та жінки. ",
+    p3: "Якщо це вже сталося, згадайте про Кремген UNI! Нанесіть Кремген UNI тонким шаром на подразнену ділянку шкіри – свою або малечі – та компоненти Кремген UNI допоможуть у її зволоженні та відновленні.",
+  },
+  autumn: {
+    p1: "Осінь – найкрасивіша пора року, але й непередбачувана. Зранку тепло, ввечері холодно, вітер із першим морозом починає сушити шкіру на відкритих ділянках. ",
+    p2: "А тут ще й санітайзери та антисептики, що стали невід’ємною частиною нашого життя. Вкупі з холодним осіннім вітром відразу відчувається сухість, можуть з’явитися лущення та свербіж на тильній стороні долонь. Але нанесення невеликої кількості Кремгену UNI, який є універсальним кремом на всі сезони, допоможе у відновленні шкіри. Головне – мати його завжди при собі!",
+  },
+  winter: {
+    p1: "Зима – тотальний екстрим для нашого організму, особливо для незахищеної одягом шкіри.",
+    p2: "Свербіж, лущення, сухість, на жаль, часто стають вже звичними явищами на холоді, та коли шкіра починає тріскатися і з’являються навіть рани від перебування на холоді – це надто неприємно та боляче. ",
+    p3: "Але кожна жінка, мати і бабуся, навіть вже й чоловіки теж знають: Кремген UNI допоможе подразненій шкірі. Адже в його складі такі цінні та корисні компоненти, як пантотенат кальцію, бджолиний віск та гліцерин.",
+  },
 };
 
 const slider = document.querySelector(".slider");
+const popupContent = document.querySelector(".popup__scroll");
 slider.addEventListener("click", (event) => {
   if (event.target.classList.contains("slider__item")) {
     document
@@ -28,19 +44,33 @@ popupBtnsOpen.forEach((btn) => {
     switch (season) {
       case "spring":
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
+        popupText("spring");
         break;
       case "summer":
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
+        popupText("summer");
         break;
       case "autumn":
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
+        popupText("autumn");
         break;
       case "winter":
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
+        popupText("winter");
         break;
     }
   });
 });
+function popupText(prop) {
+  popupContent.innerHTML = "";
+  for (var key in data[prop]) {
+    let paragraf = document.createElement("p");
+    paragraf.classList.add("popup__text");
+    paragraf.innerHTML = data[prop][key];
+    console.dir(paragraf);
+    popupContent.append(paragraf);
+  }
+}
 
 popup.addEventListener("click", (event) => {
   if (
