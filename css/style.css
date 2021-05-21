@@ -558,9 +558,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 36px;
-    max-width: 130px;
-    margin: 0 auto;
+    height: 16px;
+    max-width: 110px;
+    margin: 15px auto 0;
   }
   .tns-nav button {
     width: 16px !important;
