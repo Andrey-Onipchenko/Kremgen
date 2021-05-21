@@ -45,3 +45,52 @@ popup.addEventListener("click", (event) => {
     body.classList.remove("hidden");
   }
 });
+
+var tinySlider = tns({
+  preventScrollOnTouch: "auto",
+  container: ".tiny-slider",
+  items: 1,
+  controls: false,
+  navPosition: "bottom",
+});
+
+class Burger {
+  constructor(burgerSelector, menuSelector, linkSelector) {
+    this.burger = document.querySelector(burgerSelector);
+    this.menu = document.querySelector(menuSelector);
+    this.links = document.querySelectorAll(linkSelector);
+    this.body = document.querySelector("body");
+    this.init();
+  }
+
+  init() {
+    try {
+      this.burger.addEventListener("click", () => {
+        this.toggle();
+      });
+
+      this.links.forEach((link) => {
+        link.addEventListener("click", () => {
+          console.dir(document.clientWidht);
+          if (window.innerWidth < 701) {
+            this.toggle();
+          }
+        });
+      });
+    } catch (error) {
+      console.log(`class ${this.burger} not found`);
+    }
+  }
+
+  toggle() {
+    try {
+      this.menu.classList.toggle("mobile-menu_active");
+      this.body.classList.toggle("hidden");
+      this.burger.classList.toggle("burger-active");
+    } catch (error) {
+      console.log(`class ${this.menu} not found`);
+    }
+  }
+}
+
+const burger = new Burger(".burger", ".header__right", ".header__link");

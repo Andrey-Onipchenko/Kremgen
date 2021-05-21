@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кремген</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -24,6 +28,7 @@
             />
           </div>
           <div class="header__right">
+            <a href="#" class="header__link header__home">Головна</a>
             <a href="#description" class="header__link">Про продукт</a>
             <a href="#video" class="header__link header__link-video">Відео</a>
           </div>
@@ -103,6 +108,75 @@
               що робити, щоб її захистити.
             </p>
             <button class="btn popup__open" data-season="winter">
+              Детальніше
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tiny-wrap">
+      <img class="tiny-wrap__img" src="./images/arrow.png" alt="" />
+
+      <div class="tiny-slider">
+        <div class="tiny-slider__slide">
+          <img class="tiny-slider__img" src="./images/4.jpg" alt="" />
+          <div class="tiny-slider__content">
+            <h3 class="slider__content-title">Весна</h3>
+            <p class="slider__content-text">
+              Відпочинок на природі можуть зіпсувати укуси комах! Як наслідок –
+              свербіж, подразнення, запалення. Як заспокоїти шкіру?
+            </p>
+            <button
+              class="btn popup__open slider__content-btn"
+              data-season="spring"
+            >
+              Детальніше
+            </button>
+          </div>
+        </div>
+        <div class="tiny-slider__slide">
+          <img class="tiny-slider__img" src="./images/2.jpg" alt="" />
+          <div class="tiny-slider__content">
+            <h3 class="slider__content-title">Літо</h3>
+            <p class="slider__content-text">
+              Сонце не завжди лагідне до твоєї шкіри та може обпікати. Як зняти
+              запалення?
+            </p>
+            <button
+              class="btn popup__open slider__content-btn"
+              data-season="summer"
+            >
+              Детальніше
+            </button>
+          </div>
+        </div>
+        <div class="tiny-slider__slide">
+          <img class="tiny-slider__img" src="./images/3.jpg" alt="" />
+          <div class="tiny-slider__content">
+            <h3 class="slider__content-title">Осінь</h3>
+            <p class="slider__content-text">
+              Поривчастий холодний вітер пересушує шкіру. Як її відновити?
+            </p>
+            <button
+              class="btn popup__open slider__content-btn"
+              data-season="autumn"
+            >
+              Детальніше
+            </button>
+          </div>
+        </div>
+        <div class="tiny-slider__slide">
+          <img class="tiny-slider__img" src="./images/1.jpg" alt="" />
+          <div class="tiny-slider__content">
+            <h3 class="slider__content-title">Зима</h3>
+            <p class="slider__content-text">
+              Мороз. Сніг. А чи в захваті від цього буде твоя шкіра? Дізнайся,
+              що робити, щоб її захистити.
+            </p>
+            <button
+              class="btn popup__open slider__content-btn"
+              data-season="winter"
+            >
               Детальніше
             </button>
           </div>
@@ -224,24 +298,27 @@
             </video>
           </div>
           <div class="popup__content-right">
-            <p class="popup__text">
-              Літо – час сонця, пляжів та ніжної засмаги. Але після довгої зими
-              наша шкіра досить вразлива, й навіть м’які та лагідні промені
-              сонця можуть залишити червоні сліди, опіки шкіри.
-            </p>
-            <p class="popup__text">Особливо вразливі діти та жінки.</p>
-            <p class="popup__text">
-              Якщо це вже сталося, згадайте про Кремген UNI! Нанесіть Кремген
-              UNI тонким шаром на подразнену ділянку шкіри – свою або малечі –
-              та компоненти Кремген UNI допоможуть у її зволоженні та
-              відновленні.
-            </p>
+            <div class="popup__scroll">
+              <p class="popup__text">
+                Літо – час сонця, пляжів та ніжної засмаги. Але після довгої
+                зими наша шкіра досить вразлива, й навіть м’які та лагідні
+                промені сонця можуть залишити червоні сліди, опіки шкіри.
+              </p>
+              <p class="popup__text">Особливо вразливі діти та жінки.</p>
+              <p class="popup__text">
+                Якщо це вже сталося, згадайте про Кремген UNI! Нанесіть Кремген
+                UNI тонким шаром на подразнену ділянку шкіри – свою або малечі –
+                та компоненти Кремген UNI допоможуть у її зволоженні та
+                відновленні.
+              </p>
+            </div>
             <a href="#" class="btn">Дізнатись більше</a>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
