@@ -140,7 +140,8 @@ let burgerWrap = document.querySelector(".burger-wrap");
 // burgerLogo = document.querySelector(".burger-logo");
 document.addEventListener("scroll", (event) => {
   if (event.target.scrollingElement.scrollTop > 50) {
-    burgerWrap.style.background = "url('../images/burger.png')";
+    burgerWrap.style.background =
+      "url('https://andreysk8er.github.io/Kremgen/images/burger.png')";
     // burgerLogo.style.visibility = "visible";
   } else {
     burgerWrap.style.background = "transparent";
