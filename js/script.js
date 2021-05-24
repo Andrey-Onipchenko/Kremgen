@@ -67,7 +67,6 @@ function popupText(prop) {
     let paragraf = document.createElement("p");
     paragraf.classList.add("popup__text");
     paragraf.innerHTML = data[prop][key];
-    console.dir(paragraf);
     popupContent.append(paragraf);
   }
 }
@@ -89,6 +88,8 @@ var tinySlider = tns({
   items: 1,
   controls: false,
   navPosition: "bottom",
+  autoplay: true,
+  autoplayTimeout: 2000,
 });
 
 class Burger {
@@ -108,10 +109,8 @@ class Burger {
 
       this.links.forEach((link) => {
         link.addEventListener("click", () => {
-          console.dir(document.clientWidht);
           if (window.innerWidth < 701) {
             this.toggle();
-            this.video.pause();
           }
         });
       });
@@ -137,3 +136,37 @@ const burger = new Burger(
   ".header__link",
   ".popup__video"
 );
+let burgerWrap = document.querySelector(".burger-wrap");
+// burgerLogo = document.querySelector(".burger-logo");
+document.addEventListener("scroll", (event) => {
+  if (event.target.scrollingElement.scrollTop > 50) {
+    burgerWrap.style.background = "url('../images/burger.png')";
+    // burgerLogo.style.visibility = "visible";
+  } else {
+    burgerWrap.style.background = "transparent";
+    // burgerLogo.style.visibility = "hidden";
+  }
+});
+
+// btn more main
+let more = document.querySelector(".main__more"),
+  scrollToSlider;
+
+if (window.innerWidth > 700) {
+  scrollToSlider = document.querySelector("#slider").offsetTop;
+} else {
+  scrollToSlider = document.querySelector("#tiny-slider").offsetTop - 50;
+}
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 700) {
+    scrollToSlider = document.querySelector("#slider").offsetTop;
+  } else {
+    scrollToSlider = document.querySelector("#tiny-slider").offsetTop;
+  }
+});
+more.addEventListener("click", () => {
+  window.scrollTo({
+    top: scrollToSlider,
+    behavior: "smooth",
+  });
+});
