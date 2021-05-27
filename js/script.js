@@ -22,7 +22,7 @@ let data = {
 
 const slider = document.querySelector(".slider");
 const popupContent = document.querySelector(".popup__scroll");
-slider.addEventListener("click", (event) => {
+slider.addEventListener("mouseover", (event) => {
   if (event.target.classList.contains("slider__item")) {
     document
       .querySelector(".slider__item_active")
