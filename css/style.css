@@ -226,7 +226,7 @@ body {
   margin-bottom: 30px;
 }
 .description__right {
-  max-width: 55%;
+  max-width: 57%;
   width: 100%;
 }
 .description__count {
@@ -252,9 +252,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.description__structure-left,
-.description__structure-right {
+.description__structure-left {
   max-width: 47%;
+}
+.description__structure-right {
+  max-width: 50%;
 }
 .description__structure-text {
   margin-bottom: 25px;
