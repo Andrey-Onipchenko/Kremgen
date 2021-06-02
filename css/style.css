@@ -75,6 +75,10 @@ body {
 .block {
   display: block;
 }
+.sub {
+  vertical-align: sub;
+  font-size: 12px;
+}
 /* main */
 .header {
   padding-top: 15px;
