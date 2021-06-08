@@ -283,6 +283,7 @@ body {
 .video__item {
   width: 60%;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 .video__text {
   max-width: 560px;
@@ -362,6 +363,9 @@ body {
 }
 .popup__content {
   display: flex;
+}
+.popup__content-left {
+  padding-top: 35px;
 }
 .popup__content-right {
   max-width: 320px;
@@ -573,6 +577,7 @@ body {
   .main__btn {
     max-width: 100%;
   }
+
   .tiny-wrap__img {
     display: block;
     max-width: 40px;
@@ -729,6 +734,9 @@ body {
   .popup__content {
     flex-direction: column;
     height: 80vh;
+  }
+  .popup__content-left {
+    padding-top: 0;
   }
   .popup__video {
     width: 90vw;

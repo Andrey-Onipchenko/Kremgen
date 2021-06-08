@@ -49,7 +49,10 @@ popupBtnsOpen.forEach((btn) => {
           "onclick",
           "gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'spring_board'});"
         );
-        video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
+        video.setAttribute(
+          "src",
+          "https://kremgen.ivona.bigmir.net/video/spring.mp4"
+        );
         popupText("spring");
         break;
       case "summer":
@@ -57,7 +60,10 @@ popupBtnsOpen.forEach((btn) => {
           "onclick",
           "gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'summer_board'});"
         );
-        video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
+        video.setAttribute(
+          "src",
+          "https://kremgen.ivona.bigmir.net/video/summer.mp4"
+        );
         popupText("summer");
         break;
       case "autumn":
@@ -65,7 +71,10 @@ popupBtnsOpen.forEach((btn) => {
           "onclick",
           "gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'autumn_board'});"
         );
-        video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
+        video.setAttribute(
+          "src",
+          "https://kremgen.ivona.bigmir.net/video/autumn.mp4"
+        );
         popupText("autumn");
         break;
       case "winter":
@@ -73,7 +82,10 @@ popupBtnsOpen.forEach((btn) => {
           "onclick",
           "gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'winter_board'});"
         );
-        video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
+        video.setAttribute(
+          "src",
+          "https://kremgen.ivona.bigmir.net/video/winter.mp4"
+        );
         popupText("winter");
         break;
     }
