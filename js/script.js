@@ -35,7 +35,9 @@ slider.addEventListener("mouseover", (event) => {
 let popupBtnsOpen = document.querySelectorAll(".popup__open"),
   popup = document.querySelector(".popup"),
   body = document.querySelector("body"),
-  video = document.querySelector(".popup__video");
+  video = document.querySelector(".popup__video"),
+  seeMore = document.querySelector("[data-seeMore='seeMore']");
+
 popupBtnsOpen.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     popup.classList.add("popup__open");
@@ -43,18 +45,34 @@ popupBtnsOpen.forEach((btn) => {
     let season = event.target.dataset.season;
     switch (season) {
       case "spring":
+        seeMore.setAttribute(
+          "onclick",
+          "gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'spring_board'});"
+        );
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
         popupText("spring");
         break;
       case "summer":
+        seeMore.setAttribute(
+          "onclick",
+          "gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'summer_board'});"
+        );
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
         popupText("summer");
         break;
       case "autumn":
+        seeMore.setAttribute(
+          "onclick",
+          "gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'autumn_board'});"
+        );
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
         popupText("autumn");
         break;
       case "winter":
+        seeMore.setAttribute(
+          "onclick",
+          "gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'winter_board'});"
+        );
         video.setAttribute("src", "https://pascha.smak.ua/media/spring.mp4");
         popupText("winter");
         break;

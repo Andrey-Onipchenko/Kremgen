@@ -10,7 +10,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-3119939-72"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-3119939-72");
+    </script>
   </head>
+
   <body>
     <main class="main" id="main">
       <div class="container">
@@ -79,7 +94,11 @@
               Відпочинок на природі можуть зіпсувати укуси комах! Як наслідок -
               свербіж, подразнення. Як заспокоїти шкіру?
             </p>
-            <button class="btn popup__open" data-season="spring">
+            <button
+              class="btn popup__open"
+              data-season="spring"
+              onclick="gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'spring'});"
+            >
               Детальніше
             </button>
           </div>
@@ -91,7 +110,11 @@
               Сонце не завжди лагідне до твоєї шкіри та може обпікати! Як
               усунути подразнення?
             </p>
-            <button class="btn popup__open" data-season="summer">
+            <button
+              class="btn popup__open"
+              data-season="summer"
+              onclick="gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'summer'});"
+            >
               Детальніше
             </button>
           </div>
@@ -102,7 +125,11 @@
             <p class="slider__content-text">
               Поривчастий холодний вітер пересушує шкіру. Як її відновити?
             </p>
-            <button class="btn popup__open" data-season="autumn">
+            <button
+              class="btn popup__open"
+              data-season="autumn"
+              onclick="gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'autumn'});"
+            >
               Детальніше
             </button>
           </div>
@@ -114,7 +141,11 @@
               Мороз. Сніг. А чи в захваті від цього буде твоя шкіра? Дізнайся,
               що робити, щоб її захистити.
             </p>
-            <button class="btn popup__open" data-season="winter">
+            <button
+              class="btn popup__open"
+              data-season="winter"
+              onclick="gtag('event', 'click', { 'event_category': 'curtis', 'event_label': 'winter'});"
+            >
               Детальніше
             </button>
           </div>
@@ -326,6 +357,7 @@
             <a
               href="https://sperco.ua/drugs/kremgen-uni/"
               class="btn"
+              data-seeMore="seeMore"
               target="_blank"
               >Дізнатись більше</a
             >
