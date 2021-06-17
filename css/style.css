@@ -312,6 +312,13 @@ body {
   max-width: 270px;
   width: 100%;
 }
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 235px;
+  width: 100%;
+}
 .footer__item-center {
   text-align: center;
 }
@@ -681,6 +688,7 @@ body {
   }
   .description__count-img {
     max-width: 65%;
+    width: 100%;
     min-width: 175px;
     margin-bottom: 30px;
   }
